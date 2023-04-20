@@ -6,22 +6,26 @@ using System.Threading.Tasks;
 
 namespace Static.Demo
 {
-    public class Fish
+    public class Fish : IFish
     {
-        #region Private Fields
-        private string? fishBreed;
+        #region public Fields
 
-        private string? fishSize = "";
+        private string fishBreed;
 
-        private int FishCount = 0;
+        public string fishColor;
+
+        private string fishSize;
+
+        public int FishCount = 0;
+
         #endregion
 
         //FishRegion made as static with static keyword
-        public static string? FishRegion = "Pacific Ocean";
+        public static string FishRegion = "Pacific Ocean";
 
         #region Fish Constructor
-        public Fish(string breed, string color, string size) 
-        { 
+        public Fish(string breed, string color, string size)
+        {
             FishBreed = breed;
             FishColor = color;
             FishSize = size;
@@ -33,45 +37,56 @@ namespace Static.Demo
         {
             get
             {
-                return FishBreed;
-            }
-            set 
-            { 
-                if (value == "Color Widow" || value == "Tiger Barb" || value =="Gold Fish") 
-                {
-                    FishBreed = value;
-                }
-                else
-                {
-                    FishBreed = "Unknown";
-                }     
-            }
-        }
-
-        public string? FishColor { get; set; }
-
-        public string? FishSize
-        {
-            get
-            {
-                return FishSize;
+                return fishBreed;
             }
             set
             {
-                if (fishSize == "Small" || fishSize == "Medium" || fishSize == "Large")
+                if (value == "Color Widow" || value == "Tiger Barb" || value == "Gold Fish")
                 {
-                    FishSize = fishSize;
+                    fishBreed = value;
                 }
                 else
                 {
-                    FishSize = "Unsize";
+                    fishBreed = "Unknown";
+                }
+            }
+        }
+
+        public string FishColor 
+        {
+            get
+            {
+                return fishColor;
+            } 
+            set
+            {
+                fishColor = value;
+            }
+             
+        }
+
+        public string FishSize
+        {
+            get
+            {
+                return fishSize;
+            }
+            set
+            {
+                if (value == "Small" || value == "Medium" || value == "Large")
+                {
+                    fishSize = value;
+                }
+                else
+                {
+                    fishSize = "Unsize";
                 }
             }
         }
         #endregion
 
         #region Fish Methods
-        public int CountFish ()
+        public int CountFish()
         {
             FishCount++;
             return FishCount;
