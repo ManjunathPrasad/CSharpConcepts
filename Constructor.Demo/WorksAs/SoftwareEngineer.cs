@@ -7,15 +7,30 @@ using System.Threading.Tasks;
 
 namespace Constructor.Demo.WorksAs
 {
-    public class SoftwareEngineer : IEngineer, ISoftwareEngineer
+    public class SoftwareEngineer : Engineer, ISoftwareEngineer
     {
-        public void GetWorkDuration()
+        public override int GetWorkDuration()
         {
-            Console.WriteLine(new Random().Next(1, 10));
+            int numberOfHours = new Random().Next(10, 12);
+            Console.WriteLine(numberOfHours);
+            return numberOfHours;
         }
         public void GetCodingExperience()
         {
             Console.WriteLine($"Software Engineer has {new Random().Next(1, 10)} years of Experience");
+        }
+
+        public override void UpdateWorkDuration ()
+        {
+            int workDuration = GetWorkDuration();
+            if(workDuration >= 10)
+            {
+                Console.WriteLine ($"Employee has worked for {workDuration} hours, Over Time!!");
+            }
+            else
+            {
+                Console.WriteLine($"Employee has worked for {workDuration}");
+            }
         }
     }
 }

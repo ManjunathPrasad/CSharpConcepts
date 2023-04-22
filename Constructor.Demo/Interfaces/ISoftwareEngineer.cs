@@ -3,6 +3,6 @@
     public interface ISoftwareEngineer
     {
         void GetCodingExperience();
-        void GetWorkDuration();
+        int GetWorkDuration();
     }
 }

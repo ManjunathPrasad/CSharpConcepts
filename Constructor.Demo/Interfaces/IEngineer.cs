@@ -2,6 +2,6 @@
 {
     public interface IEngineer
     {
-        void GetWorkDuration();
+        int GetWorkDuration();
     }
 }
