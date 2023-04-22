@@ -15,6 +15,7 @@ namespace Constructor.Demo.WorksAs
             Console.WriteLine(numberOfHours);
             return numberOfHours;
         }
+
         public void GetCodingExperience()
         {
             Console.WriteLine($"Software Engineer has {new Random().Next(1, 10)} years of Experience");
