@@ -11,7 +11,7 @@ namespace Constructor.Demo.WorksAs
     {
         public override int GetWorkDuration()
         {
-            int numberOfHours = new Random().Next(1, 12);
+            int numberOfHours = new Random().Next(10, 12);
             Console.WriteLine(numberOfHours);
             return numberOfHours;
         }
@@ -22,7 +22,15 @@ namespace Constructor.Demo.WorksAs
 
         public override void UpdateWorkDuration ()
         {
-            GetWorkDuration();
+            int workDuration = GetWorkDuration();
+            if(workDuration >= 10)
+            {
+                Console.WriteLine ($"Employee has worked for {workDuration} hours, Over Time!!");
+            }
+            else
+            {
+                Console.WriteLine($"Employee has worked for {workDuration}");
+            }
         }
     }
 }

@@ -25,6 +25,9 @@ namespace Constructor.Demo
             Steve.PrintGuid();
             Steve.GetWorkDuration();
             Console.WriteLine(Person.IdentificationNumber);
+
+            SoftwareEngineer Bill = new SoftwareEngineer();
+            Bill.UpdateWorkDuration();
         }
     }
 }
