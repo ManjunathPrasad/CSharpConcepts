@@ -13,7 +13,6 @@
             {
                 message = value;
             }
-
         }
 
         public void GetMessage()
