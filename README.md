@@ -100,13 +100,6 @@ namespace myNamespace
 #### When Should I override the methods?
 
 &nbsp;&nbsp;&nbsp;&nbsp; In below example, We have ```Author class``` with ```WriteBooks()``` and ```WriteArticle()``` methods. Some day, I want to add another ```class Poet``` which inherits ```Author class``` and need to keep the ```WriteBook()``` method with the same functionality, but change the functionality of the ```WriteArticle()```. Here in this situation we need to override the ```WriteArticle()``` method in the ```class Poet``` with a new definition.
-
-&nbsp;&nbsp;&nbsp;&nbsp; Note that ```Poet``` class is inheriting the ```Author``` class, that means all the methods of the ```Author``` class can be accessed by the child class ```Poet```. Here, we're just changing the definitioon of the ```WriteArticle()``` method, but ```WriteBook()``` method remain same in the ```Poet``` class since it's not overriden.
-
-&nbsp;&nbsp;&nbsp;&nbsp; In parent class ```Author```, any methods can be declared as ```virtual```. It is **not** mandatory that all the ```virtual``` methods should ```override``` the methods in child class.
-
-
-
 ```
 public class Author
 {
@@ -128,3 +121,10 @@ public class Poet : Author
     }
 }
 ```
+
+&nbsp;&nbsp;&nbsp;&nbsp; Note that ```Poet``` class is inheriting the ```Author``` class, that means all the methods of the ```Author``` class can be accessed by the child class ```Poet```. Here, we're just changing the definitioon of the ```WriteArticle()``` method, but ```WriteBook()``` method remain same in the ```Poet``` class since it's not overriden.
+
+&nbsp;&nbsp;&nbsp;&nbsp; In parent class ```Author```, any methods can be declared as ```virtual```. It is **not** mandatory that all the ```virtual``` methods should ```override``` the methods in child class.
+
+
+
