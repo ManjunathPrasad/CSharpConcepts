@@ -40,9 +40,9 @@ public class PermanentEmployee : Employee
 
 >**Effective Coding Principles**
 <font size="2">
-- Don't Repeat Yourself (DRY)
-- Keep It Simple, Stupid (KISS)
-- You Ain't Gonna Need It (YAGNI)
+* Don't Repeat Yourself (DRY)
+* Keep It Simple, Stupid (KISS)
+* You Ain't Gonna Need It (YAGNI)
 </font>
 
 >**Difference between property and function**
