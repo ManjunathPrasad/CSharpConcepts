@@ -99,7 +99,7 @@ namespace myNamespace
 
 #### When Should I override the methods?
 
-&nbsp;&nbsp;&nbsp;&nbsp; In below example, We have ```Author class``` with ```WriteBooks()``` and ```WriteArticle()``` methods. Some day, I want to add another ```class Poet``` which inherits ```Author class``` and need to keep the ```WriteBook()``` method with the same functionality, but change the functionality of the ```WriteArticle()```. Here in this situation we need to override the ```WriteArticle()``` method in the ```class Poet``` with a new definition.
+&nbsp;&nbsp;&nbsp;&nbsp; In below example, We have ```Author class``` with ```WriteBooks()``` and ```WriteArticle()``` methods. Some day, I want to add another ```class Poet``` which inherits ```Author class``` and need to keep the ```WriteBook()``` method with the same functionality, but change the functionality of the ```WriteArticle()```. Here, in this situation, we need to override the ```WriteArticle()``` method in the ```class Poet``` with a new definition.
 ```
 public class Author
 {
