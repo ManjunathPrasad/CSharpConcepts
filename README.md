@@ -1,6 +1,6 @@
-# C \# Concepts :slightly_smiling_face: 
+# C# Concepts :slightly_smiling_face: 
 
-> **Difference between Abstract and interface**
+#### Difference between Abstract and interface
 
 | Abstract              | Interface                        |
 |:---------------------- |:------------------------|
@@ -9,7 +9,8 @@
 | Abstract classes do not support multiple inheritance| Interface support multiple inheritance|
 |Abstract class can have a constructor | Interface cannot have a constructor |
 
- >**Types of classes**
+#### Types of classes
+Classes can be ```abstract```, ```static```, ```partial``` and ```sealed```
  ```
  public abstract class ClassName { }
  public static class ClassName { }
@@ -17,15 +18,17 @@
  public sealed class ClassName { }
  ```
  
->**Is it possible to prevent object creation of a class in C#?**
+#### Is it possible to prevent object creation of a class in C#?
 
 Yes. It is possible by declaring class as abstract / private / static
- ```public abstract class ClassName { }```
- ```private class ClassName { }```
- ```public static class ClassName { }```
+ ```public abstract class ClassName { }
+ public abstract class ClassName { }
+ private class ClassName { }
+ public static class ClassName { }
+ ```
 
->**How to prevent a class from being inherited**
-<font size="2">It is possible by declaring a class with ```sealed``` keyword</font>\
+#### How to prevent a class from being inherited
+It is possible by declaring a class with ```sealed``` keyword
 ```
 public sealed class Employee
 {
@@ -38,24 +41,22 @@ public sealed class Employee
 public class PermanentEmployee : Employee
 ```
 
->**Effective Coding Principles**
-<font size="2">
-\- Don't Repeat Yourself (DRY)
-\- Keep It Simple, Stupid (KISS)
-\- You Ain't Gonna Need It (YAGNI)
-</font>
+#### Effective Coding Principles
 
->**Difference between property and function**
-<font size="2">
+* Don't Repeat Yourself (DRY)
+* Keep It Simple, Stupid (KISS)
+* You Ain't Gonna Need It (YAGNI)
+
+#### Difference between property and function
+
 - Property is a specialized function
 - Property syntax is slightly  diferent than function but internally property and function are same
-</font>
-
 ```
 public int MyProperty { get; set; }
 public int MyProperty() { }
 ```
->**What is a Property?**
+#### What is a Property?
+A property is a class member that provides a flexible mechanism to **read** and **write** private field
 ```
 public class MyClass
 {
@@ -68,14 +69,13 @@ public class MyClass
     }
 }
 ```
-<font size="2"> A property is a class member that provides a flexible mechanism to **read** and **write** private field </font>
 
 
-> **Does C# support multiple inheritance?**
-<font size="2">No
-Alternative way is via multiple interfaces </font>
 
->**What are Namespaces?**
+#### Does C# support multiple inheritance?
+No. Alternative way is via multiple interfaces
+
+#### What are Namespaces?
 ```
 using System.Text;
 
@@ -87,9 +87,9 @@ namespace myNamespace
     }
 }
 ```
-<font size="2"> A namespace is a container for a set of related classes an other types. In above example, StringBuilder is defined within the namespace System.Text. </font>
+A namespace is a container for a set of related classes an other types. In above example, StringBuilder is defined within the namespace System.Text.
 
->**Difference between Encapsulation and Abstraction**
+#### Difference between Encapsulation and Abstraction
 
 |Encapsulation|Abstraction|
 |:--------------|:----------|
