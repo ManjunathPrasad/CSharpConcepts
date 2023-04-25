@@ -79,7 +79,6 @@ No. Alternative way is via multiple interfaces
 A namespace is a container for a set of related classes an other types. In above example, StringBuilder is defined within the namespace System.Text.
 ```
 using System.Text;
-
 namespace myNamespace
 {
     public class myClass
@@ -117,7 +116,7 @@ public class Poet : Author
 {
     public ovverride void WriteArticle()
     {
-        COnsole.WriteLine("Write an article for a Newspaper");
+        Console.WriteLine("Write an article for a Newspaper");
     }
 }
 ```
@@ -125,6 +124,3 @@ public class Poet : Author
 &nbsp;&nbsp;&nbsp;&nbsp; Note that ```Poet``` class is inheriting the ```Author``` class, that means all the methods of the ```Author``` class can be accessed by the child class ```Poet```. Here, we're just changing the definitioon of the ```WriteArticle()``` method, but ```WriteBook()``` method remain same in the ```Poet``` class since it's not overriden.
 
 &nbsp;&nbsp;&nbsp;&nbsp; In parent class ```Author```, any methods can be declared as ```virtual```. It is **not** mandatory that all the ```virtual``` methods should ```override``` the methods in child class.
-
-
-
