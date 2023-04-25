@@ -10,7 +10,6 @@
 |Abstract class can have a constructor | Interface cannot have a constructor |
 
  >**Types of classes**
-
  ```public abstract class ClassName { }```
  ```public static class ClassName { }```
  ```public partial class ClassName { }```
