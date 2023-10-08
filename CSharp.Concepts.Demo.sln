@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutRef.Demo", "OutRef.Demo\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates.Demo", "Delegates.Demo\Delegates.Demo.csproj", "{CAB59224-8C23-41EC-B9B7-57CEC2382772}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Params.Demo", "Params.Demo\Params.Demo.csproj", "{C56BFD25-14FD-4213-9BDD-D1AE27113542}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Params.Demo", "Params.Demo\Params.Demo.csproj", "{C56BFD25-14FD-4213-9BDD-D1AE27113542}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "This.Demo", "this.Demo\This.Demo.csproj", "{ECECE2A2-9367-4755-A1B1-1A940971C461}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "This.Demo", "this.Demo\This.Demo.csproj", "{ECECE2A2-9367-4755-A1B1-1A940971C461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance.Demo", "Inheritance.Demo\Inheritance.Demo.csproj", "{D9F4B0F0-1D12-4F3B-AE7E-A3C15B8932FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{ECECE2A2-9367-4755-A1B1-1A940971C461}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECECE2A2-9367-4755-A1B1-1A940971C461}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECECE2A2-9367-4755-A1B1-1A940971C461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9F4B0F0-1D12-4F3B-AE7E-A3C15B8932FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F4B0F0-1D12-4F3B-AE7E-A3C15B8932FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F4B0F0-1D12-4F3B-AE7E-A3C15B8932FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F4B0F0-1D12-4F3B-AE7E-A3C15B8932FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
